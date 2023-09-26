@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+/*------------------------------------------NAVBAR-------------------------------------*/
+.nav{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.nav .nav-links{
+    list-style: none;
+    
+}
+.nav .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav .logo{
+    height: 90px;
+    width: auto;
+    cursor: pointer;   
+    transition: all 0.3;
+    
+}
+.nav .logo .IMG:hover{
+    transform: scale(1.2);
+}
+
+.nav .nav-links a{
+    font-size: 700;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.nav .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.nav .nav-links a:hover{
+    color: #936639;
+} 
+
+/*------------------------------IMAGEN CENTRAL----------------------*/
+.hero{
+    background-image: url(./IMG/imagenCentral.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+.hero-bg{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 22, 0, 0.355);
+}
+.hero__body{
+    position: absolute;    
+    max-width: 350px;
+    bottom: 20%;
+    right: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+}
+.hero__Title{
+    font-size: 2.35rem;
+    color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+}
+.hero__btn{
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    border: none;
+    color:antiquewhite;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+.hero__btn:hover{
+   
+    color: #936639;
+}
+
+body{
+background-color: #463f3a;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------PRODUCTOS-------------------------------------------------------------------------*/
+.titulo{
+    color: antiquewhite;
+    text-align: center;
+    padding: 2%;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+
+.productos{
+    display: flex;
+    
+}
+
+.productosimg{
+    width: 50%;
+}
+
+.productosinfo{
+    background-color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center !important;
+    color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+}
+
+.productos:not(:last-child) .productosinfo{
+    padding: 1rem 0rem;
+}
+
+.productostitle{
+    text-align: center;
+    margin: 2rem;
+    color: #936639;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.productosinfo-p, .productosinfo-nut{
+    margin-inline-start: 20%;
+    margin-inline-end: 20%;
+}
+
+.productosinfo-nut{
+    font-weight: 500;
+    color: #936639;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.productosinfo-alfajores{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center !important;
+    color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+    background-color: #bb9457;
+}
+.productosimg-alfajores{
+    width: 50%;
+    background-color: #bb9457;
+}
+
+.productosinfo-btn{
+    font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid #936639;
+    margin: 1rem;
+    color: #936639;
+    font-family: 'Nunito', sans-serif;
+
+}
+.productosinfo-btn:hover{
+    border: #936639;
+
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------LA MEJOR CALIDAD PARA VOS------------------------------------------------------------------*/
+
+.calidad{
+    background-color: black;
+    color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+}
+.calidadtitle{
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+.calidadlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calidaditem{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calidadimg{
+    width: 50%;
+
+}
+.calidadsubtitle{
+    text-align: center;
+    font-size: 1rem;
+    margin-inline-start: 50%;
+    margin-inline-end: 50%;
+    color: #bca177;
+    font-family: 'Nunito', sans-serif;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------FORM--------------------------------------------------------------------*/
+
+.contactanos{
+    background-color: black;
+    color: #936639;
+    font-family: 'Nunito', sans-serif;
+}
+.contactitle{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contacbody{
+    display: flex;
+}
+.contacimg{
+    width: 45%;
+}
+
+.contacinfo{
+    background-color: white;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.contacinfo-title{
+    color: #936639;
+    text-align: center;
+    margin: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contacform{
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+}
+.contacform-p{
+    margin-inline-start: 20%;
+    margin-inline-end: 20%;
+}
+
+.contacform-btn{
+    font-size: 1rem;
+    color: #936639;
+    background-color: transparent;
+    border: 2px solid ;
+    border-radius: 0;
+    margin: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+.contacform-btn:hover{
+    color: white;
+    background-color: #936639;
+}
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+}
+
+.form-control{
+    background-color: #936639;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------RECETAS------------------------------------------------------------*/
+.recetas{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1rem 1rem;
+}
+
+.card{
+    border-top: none;
+    border-radius: 0%;
+    background-color: #bca177;
+}
+.card-title{
+    margin: 0.15rem 0rem;
+    text-align: center;
+    color: #936639;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card-body{
+    padding: 0.5rem 1.5rem;
+}
+
+.card-img-top{
+    border-radius: 0%;
+}
+.card-text{
+    font-size: 0.75rem;
+    color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+}
+.recetascard-btn{
+    color: #936639;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.5rem;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+.recetascard-btn:hover{
+   color: #463f3a;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------FOOTER--------------------------------------------------------------------*/
+.footerlist{
+    font-size: 1.5rem;
+    color: #936639;
+    justify-content: center;
+ 
+   
+   
+   
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding:1%;
+    max-width: 150rem;
+    background-color: black;
+    margin:0%
+
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 10%;
+   
+   
+   
+}
+
+.footer-links{
+    gap: 1%;
+    color: antiquewhite;
+    
+  
+   
+}
+
+.footer-links .footer-item img{
+    max-width: 32px;
+    margin-bottom: 0.5rem;
+}
+
+.img-humaya-footer{
+    margin: 1rem;
+    justify-content: safe;
+}
+
+
+.footer-list{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    
+    
+
+}
+
+.footer-list a{
+    color: inherit;
+    text-decoration: none;
+   
+   
+    
+}
+
+.footer-list a:hover{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.footer-item{
+    color: antiquewhite;
+    list-style: none;
+    text-decoration: none !important;
+    font-size: 1rem;  
+}
+li.footer-item{
+    text-align:left;
+    margin: 0%;
+    padding: 0% !important;
+}
+.creditos{
+background-color: #bca177;
+color: black;
+text-align: center;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*DESCRIPCION: PRODUCTOS DE CALIDAD, ORGANICOS...*/
+@media (max-width: 600px){
+    .calidad IMG{
+      width: 25rem;
+      height: 7rem;
+    }
+    .calidad {
+      width: 30rem;
+    }
+    .calidadtitle {
+      font-size: 2rem;
+    }
+    .calidadsubtitle{
+      font-size: 1em;
+    }
+  }
+  
+  /*SECCION PRODUCTOS*/
+  @media (max-width: 1410px){
+    .productosinfo h3{
+      font-size: 3em;
+      padding-bottom: 1rem;
+    }
+    .productostexto p{
+      font-size: 2em;
+      padding-bottom: 1rem;
+    }
+    .productosinfo-btn button{
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 780px){
+    .productos {
+      grid-template-columns: 1fr; 
+      grid-auto-rows: auto; 
+    }
+  
+    .productos img {
+      display: none; 
+    }
+  
+    .productostexto {
+      
+      background-size: cover;
+      background-position: center;
+      border-bottom: solid 6px black;
+    }
+    .producto1 {
+      background-image: url('./IMG/Producto1.png');
+    }
+  
+    .producto2 {
+      background-image: url('./IMG/ddl chocolatada.png');
+    }
+  
+    .producto3 {
+      background-image: url('./IMG/Producto3.png');
+    }
+  
+    .mobile{
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+    }
+  }
+  
+  /*SECCION ALFAJORES DE MAICENA*/
+  @media (max-width: 1410px){
+    .maicena-text{
+      padding-left: 10rem;
+    }
+  }
+  
+  @media (max-width: 1100px){
+    .productostexto{
+      padding: 3rem;
+    }
+  }
+  
+  @media (max-width: 950px){
+    .productostitle h3{
+      font-size: 3em;
+      padding-bottom: 1rem;
+    }
+    
+    .productostexto p{
+      font-size: 2em;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 950px){
+    .productostexto h1{
+      font-size: 2em;
+    }
+    
+    .productostexto p{
+      font-size: 1.5em;
+    }
+  
+    .productosinfo-btn button{
+      padding: 0.5rem 1rem;
+      font-size: 1.5em;
+    }
+  }
+  /*CONTACTO*/
+  @media(max-width: 1300px){
+    .contact{
+      width: 50%;
+      padding-right: 9rem;
+    }
+  }
+  @media(max-width: 768px){
+    .contact{
+      width: 55%;
+      padding-right: 3rem;
+    }
+  }
+  @media(max-width: 600px){
+    .contact{
+      width: 100%;
+      padding: 1.5rem;
+    }
+    .contact-container{
+      background-image: none;
+    }
+  }
+  
+  /*FOOTER*/
+
+  @media(max-width: 1130px){
+    .footer-item {
+      gap: 4rem;
+    }
+    .img-humaya-footer {
+      display: none;
+    }
+    .footer-list h2{
+      font-size: 2em;
+      padding: 2rem 0 1rem 0;
+    }
+    .footerlist a{
+      font-size: 2em;
+      padding-bottom: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footerlist {
+      display: none; 
+    }
+  
+    .footerlist:nth-child(3) {
+      display: flex; 
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 1rem;
+    }
+  
+    .footerlist h2{
+      display: none;
+    }
+    
+    .footerlist a {
+      display: inline-block; 
+      width: 4rem; 
+      margin: 0 1rem;
+    }
+    
+    .footerlist img {
+      width: 100%;
+      height: auto; 
+    }
+  }  
